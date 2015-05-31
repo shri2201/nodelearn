@@ -7,4 +7,14 @@ html
 		div.jumbotron		
 			h2 Hello World
 			p Today is #{date}.
-			a.btn.btn-primary(href="http://google.com") Google
+			p Please login to start.
+			form.form-signin(action="/login", method="post")
+					h2.form-signin-heading Please sign in
+					p 
+					input.input-block-level(type="text", name="username", placeholder="Email address")
+					p 
+					input.input-block-level(type="password", name="password", placeholder="Password")
+					p 
+					label.checkbox.
+						<input type="checkbox" value="remember-me" /> Remember me
+					button.btn.btn-large.btn-primary(type="submit") Sign in
