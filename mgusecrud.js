@@ -12,12 +12,12 @@ var Incident = mongoose.model('Incident', {
 											vict: String
 											});
 
-var incd1 = new Incident({place: 'Utrecht', date:'30-04-2015', typ: 'Fire', age: '13', vict: 'Gert Zijlstra'});
+var incd = new Incident({place: 'Utrecht', date:'30-04-2015', typ: 'Fire', age: '13', vict: 'Gert Zijlstra'});
 
 console.log(incd1);
 
 //Lets save it
-incd1.save(function (err, userObj) {
+incd.save(function (err, userObj) {
   if (err) {
     console.log(err);
   } else {
