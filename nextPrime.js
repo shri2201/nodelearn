@@ -17,10 +17,14 @@ function nextPrime(n) {
   }
 }
 
-function asyncPrime(n, fn) {
-  setTimeout(function() {
-    fn(nextPrime(n));
-  }, 10);
+function asyncPrime(n, fn) 
+{
+  setTimeout(
+    function()  {
+      console.log('In async call');
+      fn(nextPrime(n));
+      }, 
+  2);
 }
 
 module.exports.nextPrime  = nextPrime;
