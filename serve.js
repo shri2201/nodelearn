@@ -1,3 +1,4 @@
+//Sending the ip address of requestor thru HTTP
 var http = require('http');
 var util = require('util');
 http.createServer(function(req, res){
