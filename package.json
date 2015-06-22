@@ -1,0 +1,11 @@
+{
+  "name": "death-clock",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha -u tdd"
+  },
+  "devDependencies": {
+    "mocha": "^1.17.1"
+  }
+}
